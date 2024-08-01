@@ -91,6 +91,7 @@ Node* quickSortHelper(Node* head,Node* end)
   
     Node* pivot = partition(head, end, newHead, newEnd); 
 
+    //sort on left side of pivot
     if (newHead != pivot) { 
         Node* tmp = newHead; 
         while (tmp->next != pivot) 
@@ -102,7 +103,7 @@ Node* quickSortHelper(Node* head,Node* end)
         tmp = getTail(newHead); 
         tmp->next = pivot; 
     } 
-  
+    //sort right side of pivot
     pivot->next = quickSortHelper(pivot->next, newEnd); 
     return newHead; 
 } 

@@ -75,8 +75,8 @@ bool regularCheck(string s){
 
 
 int main(){
-    string s="([({})])(]";
-    string t ="([{}])(({}))";
+    string s="([({})])(]";//not regular
+    string t ="([{}])(({}))";//regular
     cout<<regularCheck(s)<<endl;//false
     cout<<regularCheck(t)<<endl;//true
 

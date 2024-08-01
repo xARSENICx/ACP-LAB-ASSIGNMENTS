@@ -81,8 +81,6 @@ Node* merge(Node* &first,Node* &second){
 }
 
 void mergesort(Node* &head){
-    //split into two parts
-    //recursively sort these two parts and then merge them
     if(head==nullptr || head->next==nullptr){
         return;
     }

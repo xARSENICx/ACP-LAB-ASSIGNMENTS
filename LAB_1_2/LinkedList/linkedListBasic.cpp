@@ -176,7 +176,7 @@ int main(){
     //takes O(n) time as the list is traversed once to determine it's size, then using this size, the index
     //from the beginning is calculated. Hence, another traversal is performed to go to that index
     //We can also use an idea of having two pointers such that the pointer with smaller index always differs
-    //the other one by k indices. This would require a single traversal
+    //the other one by k indices. This would require only a single traversal
     //Space complexity is O(1) 
     cout<<kthToLast(head,3)<<endl; //outputs 23
 
